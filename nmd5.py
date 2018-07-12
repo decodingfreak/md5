@@ -14,9 +14,7 @@ class NMD5:
 		self.__list = LinkedList(None)
 		if arg:
 			self.__list.add(Node(arg, None))
-			self.__hash(self.__list.toString())
-		else:
-			self.__hash(self.__list.toString()) # Generate hash for nullstring
+		self.__hash(self.__list.toString())
 		
 		self.digest_size = 16
 
